@@ -1,0 +1,240 @@
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
+  
+  width: 100%;
+  height: 100vh;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+
+
+  background: #222333;
+
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    height: 554px;
+  }
+
+  @media (max-width: 767px) {
+    height: 578px;
+  }
+`;
+
+export const Container = styled.div`
+  width: 100%;
+  max-width: 1099px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+
+  > a {
+    position: absolute;
+    top: 32px;
+
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    &:hover {
+    color: grey;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 942px;
+
+    padding-top: 30px;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 721px;
+
+    justify-content: flex-start;
+
+    > a {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+
+    padding: 0 15px;
+
+    > a {
+      top: 20px;
+
+      font-size: 24px;
+    }
+  }
+`;
+
+export const Title = styled.p`
+  text-align: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: white solid 1px;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 1.1;
+
+  @media (max-width: 991px) {
+    width: 100%;
+
+    padding: 92px 0 10px;
+
+    font-size: 38px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 87px 0 21px;
+
+    font-size: 32px;
+  }
+`;
+
+export const Subtitle = styled.p`
+  padding: 50px 0 50px 0;
+  text-align: center;
+  font-size: 20px;
+
+  @media (max-width: 991px) {
+    padding-bottom: 25px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+`;
+
+export const Items = styled.div`
+  justify-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 1199px) {
+    width: 350px;
+
+    padding-bottom: 25px;
+  }
+
+  @media (max-width: 991px) {
+    width: 300px;
+
+    padding-bottom: 39px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    &::before {
+      content: "Criador de sites fácil, seu site no ar 99.9% do tempo, certificado SSL Grátis, WordPress fácil de instalar. Pode apostar, é isso mesmo";
+    }
+  }
+`;
+
+export const Item = styled.p`
+  display: flex;
+  position: relative;
+
+  padding: 0 15px;
+
+  font-size: 15px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    background-color: var(--blue); //bolinhas entre itens
+    border-radius: 50%;
+  }
+
+  &:last-child::after {
+    width: 0;
+  }
+
+  @media (max-width: 1199px) {
+    font-weight: bold;
+
+    &:nth-child(3) {
+      padding-left: 0;
+    }
+
+    &:nth-child(2)::after {
+      width: 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+`;
+
+export const SocialMedias = styled.div `
+  display: flex;
+  justify-content: center;
+  padding: 0 0 50px 0;
+`;
+
+export const Buttons = styled.a `
+  margin: 0 10px;
+  color: white;
+  &:hover {
+    color: grey;
+  }
+`;
+
+
+export const Link = styled.div`
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+
+  > p {
+    cursor: pointer;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
+`;
+
+export const Arrow = styled.img`
+  margin-left: 8px;
+
+  cursor: pointer;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    display: initial;
+  }
+`;
