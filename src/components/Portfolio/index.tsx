@@ -1,6 +1,6 @@
-import { useMediaQuery } from "@material-ui/core";
+// import { useMediaQuery } from "@material-ui/core";
 import React from "react";
-import { scrollIntoView } from "../../utils/helpers";
+// import { scrollIntoView } from "../../utils/helpers";
 import {
   Container,
   Wrapper,
