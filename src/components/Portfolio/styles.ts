@@ -8,19 +8,12 @@ export const Wrapper = styled.div`
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
 
   background: #22233F;
 
   overflow: hidden;
-
-  @media (max-width: 991px) {
-    height: 554px;
-  }
-
-  @media (max-width: 767px) {
-    height: 578px;
-  }
 `;
 
 export const Container = styled.div`

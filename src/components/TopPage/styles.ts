@@ -8,22 +8,13 @@ export const Wrapper = styled.div`
 
   display: flex;
   justify-content: center;
-
-
   background: #222333;
 
   overflow: hidden;
-
-  @media (max-width: 991px) {
-    height: 554px;
-  }
-
-  @media (max-width: 767px) {
-    height: 578px;
-  }
 `;
 
 export const Container = styled.div`
+
   width: 100%;
   max-width: 1099px;
 
@@ -117,29 +108,23 @@ export const Items = styled.div`
   justify-content: center;
 
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 
   @media (max-width: 1199px) {
-    width: 350px;
-
     padding-bottom: 25px;
   }
 
   @media (max-width: 991px) {
-    width: 300px;
-
     padding-bottom: 39px;
   }
 
   @media (max-width: 767px) {
     width: 100%;
-
+    flex-direction: column;
+    align-items: center;
     font-size: 12px;
     line-height: 1.6;
-
-    &::before {
-      content: "Criador de sites fácil, seu site no ar 99.9% do tempo, certificado SSL Grátis, WordPress fácil de instalar. Pode apostar, é isso mesmo";
-    }
   }
 `;
 
@@ -164,7 +149,7 @@ export const Item = styled.p`
     right: 0;
     top: 50%;
 
-    background-color: var(--blue); //bolinhas entre itens
+    background-color: white; //bolinhas entre itens
     border-radius: 50%;
   }
 
@@ -173,14 +158,13 @@ export const Item = styled.p`
   }
 
   @media (max-width: 1199px) {
-    font-weight: bold;
-
     &:nth-child(3) {
-      padding-left: 0;
+      /* padding-left: 0; */
     }
 
     &:nth-child(2)::after {
-      width: 0;
+      padding-left: 0;
+
     }
   }
 
@@ -191,7 +175,14 @@ export const Item = styled.p`
   }
 
   @media (max-width: 767px) {
-    display: none;
+    margin-bottom: 10px;
+    &:nth-child(1)::after {
+      width: 0;
+    }
+
+    &:nth-child(2)::after {
+      width: 0;
+    }
   }
 `;
 
