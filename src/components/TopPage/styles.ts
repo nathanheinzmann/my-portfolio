@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
+
 export const Wrapper = styled.div`
   
   width: 100%;
-  height: 100vh;
-  color: white;
+  height: 93vh;
+  color: ${props => props.theme.colors.text};
 
   display: flex;
   justify-content: center;
-  background: #222333;
+  background: ${props => props.theme.colors.backgroundTop};
 
   overflow: hidden;
 `;
@@ -30,7 +31,7 @@ export const Container = styled.div`
 
     font-weight: bold;
     font-size: 30px;
-    color: white;
+    color: ${props => props.theme.colors.text};
     text-decoration: none;
     &:hover {
     color: grey;
@@ -70,7 +71,7 @@ export const Title = styled.p`
   text-align: center;
   margin-bottom: 16px;
   padding-bottom: 16px;
-  border-bottom: white solid 1px;
+  border-bottom: ${props => props.theme.colors.text} solid 1px;
   font-size: 75px;
   font-weight: bold;
   line-height: 1.1;
@@ -128,7 +129,11 @@ export const Items = styled.div`
   }
 `;
 
-export const Item = styled.p`
+export const Item = styled.button`
+  background: none;
+  border: 0;
+  outline: 0;
+  color: ${props => props.theme.colors.text};
   display: flex;
   position: relative;
 
@@ -136,10 +141,17 @@ export const Item = styled.p`
 
   font-size: 15px;
 
-  &:first-child {
-    padding-left: 0;
+
+  &:first-child, &:nth-child(2), &:nth-child(3){
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
+  &:first-child{
+    padding-left: 0;
+  }
+  
   &::after {
     content: "";
     width: 4px;
@@ -149,22 +161,24 @@ export const Item = styled.p`
     right: 0;
     top: 50%;
 
-    background-color: white; //bolinhas entre itens
+    background-color: ${props => props.theme.colors.text}; //bolinhas entre itens
     border-radius: 50%;
+
   }
 
   &:last-child::after {
     width: 0;
+    
   }
 
   @media (max-width: 1199px) {
     &:nth-child(3) {
       /* padding-left: 0; */
+      
     }
 
     &:nth-child(2)::after {
       padding-left: 0;
-
     }
   }
 
@@ -190,13 +204,27 @@ export const SocialMedias = styled.div `
   display: flex;
   justify-content: center;
   padding: 0 0 50px 0;
+
+  
 `;
 
 export const Buttons = styled.a `
   margin: 0 10px;
-  color: white;
-  &:hover {
-    color: grey;
+  color: ${props => props.theme.colors.text};
+  &:nth-child(1) {
+    &:hover {
+      color: #0A66C2;
+    }
+  }
+  &:nth-child(2) {
+    &:hover {
+      color: grey;
+    }
+  }
+  &:nth-child(3) {
+    &:hover {
+      color: #D93025;
+    }
   }
 `;
 
@@ -204,28 +232,16 @@ export const Buttons = styled.a `
 export const Link = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 18px;
   font-weight: bold;
 
   > p {
+    display: flex;
     cursor: pointer;
   }
 
   @media (max-width: 991px) {
     font-size: 16px;
-  }
-`;
-
-export const Arrow = styled.img`
-  margin-left: 8px;
-
-  cursor: pointer;
-
-  @media (max-width: 991px) {
-    display: none;
-  }
-
-  @media (max-width: 767px) {
-    display: initial;
   }
 `;

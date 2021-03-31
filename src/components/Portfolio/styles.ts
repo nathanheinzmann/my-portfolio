@@ -4,14 +4,14 @@ export const Wrapper = styled.div`
   
   width: 100%;
   height: 100vh;
-  color: white;
+  color: ${props => props.theme.colors.text};
 
   display: flex;
   justify-content: center;
   align-items: center;
 
 
-  background: #22233F;
+  background: ${props => props.theme.colors.backgroundPortfolio};
 
   overflow: hidden;
 `;
