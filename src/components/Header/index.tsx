@@ -37,8 +37,8 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
           height={10}
           width={40}
           handleDiameter={20}
-          offColor={shade(0.15, colors.secundary)}
-          onColor={shade(0.15, colors.secundary)}
+          offColor={shade(0.15, colors.link)}
+          onColor={shade(0.15, colors.link)}
         />
       </Wrapper>
     </Container>

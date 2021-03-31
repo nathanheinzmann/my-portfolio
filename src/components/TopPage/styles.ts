@@ -144,7 +144,9 @@ export const Item = styled.button`
 
   &:first-child, &:nth-child(2), &:nth-child(3){
     &:hover {
-      text-decoration: underline;
+      /* text-decoration: underline; */
+      color: ${props => props.theme.colors.link};
+      cursor: pointer;
     }
   }
 
@@ -237,6 +239,9 @@ export const Link = styled.div`
   font-weight: bold;
 
   > p {
+    &:hover{
+      color: ${props => props.theme.colors.link};
+    }
     display: flex;
     cursor: pointer;
   }

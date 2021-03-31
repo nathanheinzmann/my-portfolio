@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
     color: #f5f5f5;
     text-decoration: none;
     &:hover {
-    color: grey;
+    color: ${props => props.theme.colors.link};
     }
   }
 `;

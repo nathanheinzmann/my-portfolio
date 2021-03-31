@@ -108,7 +108,7 @@ const TopPage: React.FC<TopPageProps> = () => {
           open={open3}
           onClose={handleClose}
           TransitionComponent={transition}
-          message="dshuasuhaduhsaduhdsa"
+          message="Um simples jovem fuçador de fóruns da internet, fascinado pelo aprendizado na área da tecnologia."
           key={transition ? transition.name : ''}
         />
       </div>
