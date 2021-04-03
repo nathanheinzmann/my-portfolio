@@ -5,8 +5,9 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
 
+
   @media (max-width: 767px) {
-    height: 150vh;
+    height: 100%;
   }
 
   color: ${props => props.theme.colors.text};
@@ -29,7 +30,7 @@ export const Cards = styled.div`
   }
 `;
 export const CardOne = styled.div`
-  margin: 0 10px;
+  margin: 10px 10px;
   @media (max-width: 767px) {
     margin: 10px 10px;
   }

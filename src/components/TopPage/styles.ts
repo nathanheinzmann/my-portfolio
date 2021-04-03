@@ -5,6 +5,12 @@ export const Wrapper = styled.div`
   
   width: 100%;
   height: 93vh;
+
+  @media (max-width: 424px) {
+    /* height: 100%; */
+    padding: 10px 0;
+  }
+
   color: ${props => props.theme.colors.text};
 
   display: flex;
@@ -112,20 +118,13 @@ export const Items = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
 
-  @media (max-width: 1199px) {
-    padding-bottom: 25px;
-  }
-
-  @media (max-width: 991px) {
-    padding-bottom: 39px;
-  }
-
   @media (max-width: 767px) {
     width: 100%;
     flex-direction: column;
     align-items: center;
     font-size: 12px;
     line-height: 1.6;
+    /* padding-bottom: 5px; */
   }
 `;
 

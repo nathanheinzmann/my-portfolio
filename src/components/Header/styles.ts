@@ -7,7 +7,6 @@ export const Container = styled.div`
   background: ${props => props.theme.colors.primary};
   align-items: center;
   height: 7vh;
-  /* position: fixed; */
 `;
 export const Wrapper = styled.div`
   width: 100%;

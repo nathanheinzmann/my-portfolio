@@ -1,4 +1,3 @@
-import { useMediaQuery } from "@material-ui/core";
 import React from "react";
 import { scrollIntoView } from "../../utils/helpers";
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -83,8 +82,7 @@ const TopPage: React.FC<TopPageProps> = () => {
       <Link>
         <p onClick={() => scrollIntoView("Portfolio", "smooth")}>
           Portfólio
-          {useMediaQuery("(max-width: 991px)") && <span>?</span>}
-          <ExpandMoreIcon />
+        <ExpandMoreIcon />
         </p>
       </Link>
 
