@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   height: 100vh;
 
   @media (max-width: 767px) {
-    height: 120vh;
+    height: 150vh;
   }
 
   color: ${props => props.theme.colors.text};
