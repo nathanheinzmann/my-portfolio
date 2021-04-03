@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`  
+  padding: 50px 0;
   width: 100%;
   height: 100vh;
+
+  @media (max-width: 767px) {
+    height: 120vh;
+  }
+
   color: ${props => props.theme.colors.text};
 
   display: flex;
