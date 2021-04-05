@@ -43,7 +43,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
               <CardMedia
                 component="img"
                 alt="Contemplative Reptile"
-                height="140"
+                height="180"
                 image="https://i.imgur.com/8hbIkC9.png"
                 title="CTT"
               />
@@ -66,25 +66,25 @@ const Portfolio: React.FC<PortfolioProps> = () => {
 
         <CardOne>
           <Card className={classes.root}>
-            <CardActionArea target="blank" href="https://central-de-trabalhos-tecnicos.netlify.app/" >
+            <CardActionArea target="blank" href="https://moveit-nextjs-phi.vercel.app/" >
               <CardMedia
                 component="img"
                 alt="Contemplative Reptile"
-                height="140"
-                image="https://i.imgur.com/8hbIkC9.png"
+                height="180"
+                image="https://i.imgur.com/RRafh9r.png"
                 title="CTT"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Central de Trabalhos Técnicos
+                  MoveIt <br/> <br/>
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Projeto em desenvolvimento que irá consumir uma API para acessar artigos acadêmicos da URI Santo Ângelo
+                  Projeto desenvolvido na Next Level Week 4 da Rocketseat. <br/> <br/>
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" target="blank" href="https://central-de-trabalhos-tecnicos.netlify.app/">
+              <Button size="small" color="primary" target="blank" href="https://moveit-nextjs-phi.vercel.app/">
                 Acessar
               </Button>
             </CardActions>

@@ -31,6 +31,7 @@ export const Cards = styled.div`
 `;
 export const CardOne = styled.div`
   margin: 10px 10px;
+  height: 400px;
   @media (max-width: 767px) {
     margin: 10px 10px;
   }

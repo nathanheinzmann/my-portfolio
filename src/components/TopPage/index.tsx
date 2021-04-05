@@ -74,7 +74,7 @@ const TopPage: React.FC<TopPageProps> = () => {
       </Subtitle>
 
       <SocialMedias>
-        <Buttons href="https://www.linkedin.com/in/nathan-heinzmann-616216141/"><LinkedInIcon style={{ fontSize: 50 }} /></Buttons>
+        <Buttons href="https://www.linkedin.com/in/nathanheinzmann/"><LinkedInIcon style={{ fontSize: 50 }} /></Buttons>
         <Buttons href="https://github.com/nathanheinzmann" ><GitHubIcon style={{ fontSize: 50 }} /></Buttons>
         <Buttons href="mailto:nathanhph@gmail.com" ><MailIcon style={{ fontSize: 50 }} /></Buttons>
       </SocialMedias>
