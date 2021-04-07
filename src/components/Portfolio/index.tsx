@@ -39,7 +39,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
       <Cards>
         <CardOne>
           <Card className={classes.root}>
-            <CardActionArea target="blank" href="https://central-de-trabalhos-tecnicos.netlify.app/" >
+            <CardActionArea target="blank" href="https://technical-works-central.vercel.app/" >
               <CardMedia
                 component="img"
                 alt="Contemplative Reptile"
@@ -57,7 +57,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" target="blank" href="https://central-de-trabalhos-tecnicos.netlify.app/">
+              <Button size="small" color="primary" target="blank" href="https://technical-works-central.vercel.app/">
                 Acessar
               </Button>
             </CardActions>
